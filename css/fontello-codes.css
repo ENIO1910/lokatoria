@@ -1,4 +1,5 @@
 
 .icon-plus:before { content: '\e800'; } /* '' */
+.icon-login:before { content: '\e801'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
 .icon-bell-alt:before { content: '\f0f3'; } /* '' */

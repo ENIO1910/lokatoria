@@ -23,6 +23,12 @@
       "css": "plus",
       "code": 59392,
       "src": "fontawesome"
+    },
+    {
+      "uid": "3a00327e61b997b58518bd43ed83c3df",
+      "css": "login",
+      "code": 59393,
+      "src": "fontawesome"
     }
   ]
 }

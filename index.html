@@ -13,43 +13,102 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <heade>
-            <nav class="navbar navbar-expand-sm navbar-light bg-primary">
-                <div class="container-fluid">
+        <header>
 
-                    <a class="navbar-brand" href="index.html">Lokatoria</a>
+                <div class="container-fluid hide-left bg-nav">
+                   
+                    <div id="mySidenav" class="sidenav bg-nav-left">
+                        <a href="javascript:void(0)" id="closenav" class="closebtn text-white">&times;</a>
+                        <ul class="navbar-nav text-uppercase text-center mt-5">
+                        <li class="nav-item nav-tab">
+                            <a class="nav-link menu-font rounded-start" href="index.html"> Home </a>
+                        </li>
+                        <li class="nav-item nav-tab">
+                            <a class="nav-link menu-font" href="cennik.html"> Login </a>
+                        </li>
+                        <li class="nav-item nav-tab">
+                            <a class="nav-link menu-font" href="#"> Rejestracja </a>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-row justify-content-end w-100">
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
-                    aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                        <div class="d-flex flex-row justify-content-start w-100">
+                            <button id="button" class="mt-3 ms-3"  onclick="openNav()" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-controls="mainmenu" aria-expended="false" aria-label="przełącznik nawigacji">
+                                
+                            
+                            <span id="przycisk" class="icon" onclick="openNav()">&#9776;</span>
+                            
+                            </button>
+                            
 
-                <div class="collapse navbar-collapse flex flex-md-row flex-sm-column justify-content-md-end" id="navbarID">
+                        </div>
+                    <a class="navbar-brand mt-3 me-3 text-white" href="index.html">Lokatoria</a>
+                    </div>
+                </div>
+                
+                    <nav class="navbar bg-nav nav-font navbar-light navbar-expand w-100 hide-top">
 
-                    <ul class="navbar-nav text-uppercase text-center">
-
-                        <li class="nav-item">
-                                <a class="nav-link active" href="#"> <i class="icon-mail-alt"></i>Kontakt </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#"> <i class="icon-bell-alt"></i>Powiadomienia </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#"> Logowanie </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#"><i class="icon-plus"></i> Rejestracja </a>
-                            </li>
-                           
+                        <a class="navbar-brand ms-5 text-white" href="index.html">Lokatoria</a>
                         
-                    </ul>
-                </div>
-                </div>
-            </nav>
-        </heade>
+                        <div class="collapse navbar-collapse element d-flex flex-row justify-content-end me-5" id="mainmenu">
+                                <ul class="navbar-nav text-uppercase ">
+                                    <li class="nav-item nav-tab ">
+                                        <a class="nav-link text-white" href="index.html"> Home </a>
+                                    </li>
+                                    <li class="nav-item nav-tab">
+                                        <a class="nav-link text-white" href="cennik.html"> Login </a>
+                                    </li>
+                                    <li class="nav-item nav-tab">
+                                        <a class="nav-link text-white" href="#"> Rejestracja </a>
+                                    </li>
+                                </ul>
+                           </div>
+                     </nav>
+               
+            
+        </header>
+        <main>
+            <div class="d-flex flex-row"></div>
 
+
+
+        </main>
+      
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 	    <script src="js/bootstrap.min.js"/></script>
+
+        <script>
+          
+            
+            
+
+
+            jQuery(document).ready(function($) {
+      
+
+                const button = $('#button');
+                const prz = $('#przycisk')
+                const close = $('#closenav')
+                const mySidenav = $('#mySidenav')
+                button.on('click',function(){
+                    prz.addClass('hide');
+                    mySidenav.addClass('dwapieczero')
+
+                    
+                close.on('click',function(){
+                    prz.removeClass('hide');
+                    mySidenav.addClass('zero')
+                    mySidenav.removeClass('dwapieczero')
+                })
+            });
+                
+            });
+           
+            
+           
+            
+            </script>
     </body>
 </html>

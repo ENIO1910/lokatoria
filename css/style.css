@@ -1,335 +1,107 @@
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+body{
+  font-family: "Lato", sans-serif;
 }
-
-.list-none
-  {
-    list-style-type: none;
-  }
- 
-.klik{
-  color:rgb(191, 211, 16) !important;
-}
-.border-map
+.navbar-brand
 {
-  border-top: rgb(191, 211, 16) solid 5px;
-  border-bottom: rgb(191, 211, 16) solid 5px;
-}
-.obrazek
-{
-  width: 100%;
-  height: 600px;
+  font-size:24px;
 
 }
-.h-100{
-  min-height: 100px !important;
+.icon{
+  color: #cfcfcf;
+}
+.icon:hover{
+  color:#fafafa
+}
+.hide{
+  display:none;
+}
+.zero{
+  width: 0 !important;
+}
+.dwapieczero
+{
+  width: 250px !important;
 }
 .bg-nav
 {
-
-  background-image:linear-gradient(rgb(22,43,99), rgb(40,68,141));
-  border-bottom: rgb(191, 211, 16) solid 5px;
+  background: rgb(2,0,36);
+  background: linear-gradient(45deg, rgb(24, 24, 155) 0%, rgba(0,212,255,1) 100%);
+  min-height: 80px;
 }
-.bg-border
+.bg-nav-left
 {
-  border-top: rgb(191, 211, 16) solid 5px;
+  background: rgb(2,0,36);
+  background: linear-gradient(to bottom, rgb(24, 24, 155) 0%, rgba(0,212,255,1) 100%);
+  min-height: 80px;
+}
+.min-vh-64px
+{
+ min-height: 80px;
+}
+row>*{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
   
 }
+@media (min-width: 576px) {
 
-.nav-font
-{
-  color:rgb(191, 211, 16) !important;
-  font-family: 'Luckiest Guy', cursive !important;
-  font-size: 1.4rem !important;
+
+.hide-left{
+  display:none;
 }
 
-.navbar-light
-{
-    color:rgb(191, 211, 16) !important;
-       
 }
-.show
-  {
-    display:inline-block !important;
-    opacity:1 !important;
-    visibility: visible !important;
-    
+@media(max-width:576px){
+  .hide-top{
+    display:none;
   }
-#back {
-  display: inline-block;
-  background-color: rgb(191, 211, 16);
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 50%;
+}
+
+.padding-10
+{
+  padding-right:20px !important;
+  padding-left:20px !important;
+
+}
+.sidenav {
+  height: 100%;
+  width: 0;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s, opacity .5s, visibility .5s;
-  opacity: 0;
-  z-index: 1000;
-  visibility: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+button{
+  background-color: transparent;
+  border-style:none;
+  font-size:32px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-}
-#back:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-#back:active {
-  background-color: #555;
-}
-#back::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: lighter;
-  font-style: lighter;
-  font-size: 1em;
-  line-height: 50px;
-  color: #fff;
+  font-size: 25px;
+  color: #cfcfcf;
+  display: block;
+  transition: 0.3s;
 }
 
-.back-item {
-  position: fixed;
-  bottom: 0;
-  right:0;
-  margin-right: 10px;
-  margin-bottom:10px;
-  border-collapse: collapse;
-}
-.c-button{
-  border:none;
-  background-color:transparent;
-  text-align: center;
-}
-.icon-menu{
-  
-  color:#1C6EA4;
-  font-size: 32px;
-  
+.sidenav a:hover {
+  color: #fafafa;
 }
 
-.table{
-  cursor:pointer;
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-
-  .menu-font
-  {
-    color:white !important;
-    padding-left:20px !important;
-    padding-right: 20px !important;
-  }
-  .row>*
-  {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
- 
-  .l-spacing{
-    letter-spacing: 5px;
-    color:rgb(191, 211, 16);
-  }
-  .blue{
-    color:rgb(40,68,141);
-  }
-
- 
-  .border-promocje:hover{
-    color:rgb(191, 211, 16) !important;
-    background-image:linear-gradient(rgb(22,43,99), rgb(40,68,141));
-  }
-  .border-cennik:hover 
-  {
-    color:rgb(191, 211, 16) !important;
-    background-image:linear-gradient(rgb(22,43,99), rgb(40,68,141));
-  }
-  .fs-1
-  {
-    font-size: 3.5rem !important;
-  }
-  .text-green{
-    color:rgb(191, 211, 16) !important;
-  }
-  .text-green:hover{
-    color:greenyellow !important;
-  }
-
-  .menu-font:hover
-  {
-    color:rgb(191, 211, 16) !important;
-    background-color:rgb(68, 99, 192);
-   
-  }
-
-  .circle {
-    width:50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #50edbb;
-  }
-
-  
-  @media screen and (min-width:768px) 
-  {
-   
-  .ms-lg-7{
-    margin-left:55px;
-  }
-  .ms-lg-6
-  {
-    margin-left:40px
-  }
-
-  .margin-s-15{
-    margin-left:40px;
-  }
-  .border-cennik
-  {
-    border: 4px outset #1C6EA4;
-    border-radius: 7px 7px 7px 7px;
-    padding-left: 125px;
-    padding-right: 125px;
-    background-color:rgb(40, 92, 141);
-
-   
-  }
-  .border-promocje
-  {
-    border: 4px outset #1C6EA4;
-    border-radius: 7px 7px 7px 7px;
-    padding-left: 94px;
-    padding-right: 94px;
-    background-color:rgb(40, 92, 141);
-  }
-  .bg-image-cennik
-  {
-    background-image: url(../img/ubrania-2.jpg);
-    width:100%;
-    background-repeat: no-repeat;
-    min-height: 500px;
-    background-size: 200%;
-    background-attachment:fixed;
-    background-position: center;   
-  }
-  .bg-image
-  {
-    background-image: url(../img/garnitury.jpg);
-    width:100%;
-    min-height: 500px;
-    background-size:150%;
-    background-attachment:fixed;
-    background-position: center;
-  }
-
-
-
-  }
-
-
-  
-
-  @media screen and (max-width:768px)
-   {
-    .obrazek
-    {
-      width: 100%;
-      height: 300px;
-    }
-    .border-cennik
-  {
-    border: 4px outset #1C6EA4;
-    border-radius: 7px 7px 7px 7px;
-    padding-left: 62px;
-    padding-right: 62px;
-    background-color:rgb(40, 92, 141);
-   
-  }
-  
-  
-  .border-promocje
-  {
-    border: 4px outset #1C6EA4;
-    border-radius: 7px 7px 7px 7px;
-    padding-left: 39px;
-    padding-right: 39px;
-    background-color:rgb(40, 92, 141);
-    
-  }
- 
-  .bg-image-cennik
-  {
-    background-image: url(../img/ubrania-2.jpg);
-    width:100%;
-    background-repeat: no-repeat;
-    min-height: 500px;
-    background-size:350%;
-    background-attachment:fixed;
-    background-position: center;   
-  }
-  .bg-image
-  {
-    background-image: url(../img/garnitury.jpg);
-    width:100%;
-    height: 500px;
-    background-size:350%;
-    background-attachment:fixed;
-    background-position: center;
-  }
- 
-  }
-
-  @media screen and (max-width:1199px)
-  {
-    .rounded-start
-    {
-      border-radius: 15px 15px 0  0 !important;
-     
-    }
-    .rounded-end
-  {
-    border-radius: 0 0 15px 15px !important;
-   
-  }
-  .nav-tab
-  {
-    margin-left: auto;
-    margin-right: auto;
-    width:50%;
-  }
-  .rozmiar-s{
-    width:80px !important;
-    height: 80px !important;
-  }
-  .w-table{
-    width: 100%;
-  }
- 
-  }
- 
-  @media screen and (min-width:1200px)
-  {
-    .rounded-start
-    {
-      border-radius: 15px 0 0 15px !important;
-    }
-    .rounded-end
-    {
-      border-radius: 0 15px 15px 0 !important;
-    }
-   #button{
-     display: none;
-   }
-   .w-table{
-    width: 50%;
-  }
-  }
-
-  
- 
-
- 
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
