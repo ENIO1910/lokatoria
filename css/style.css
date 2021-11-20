@@ -44,8 +44,7 @@ body{
 {
   background-color: rgba(0, 141, 184);
   background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
-  background-attachment:fixed;
-  background-position: center;  
+ 
 }
 .window-yt{
     position: relative;
