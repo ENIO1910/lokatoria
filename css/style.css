@@ -42,7 +42,7 @@ body{
 }
 .bg-orange
 {
-  background-color: #008db8;
+  background-color: rgba(0, 141, 184);
   background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
   background-attachment:fixed;
   background-position: center;  
@@ -58,9 +58,13 @@ body{
   
 }
 .bg-tarkov{
-  background-image: url("../img/tarkov.jpg");
+  background-image: url("../img/gun.jpg");
+  width:100%;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  background-size: 200%;
   background-attachment:fixed;
-  min-height: 500px;  
+  background-position: top;
 }
 .text-grey{
   color:blanchedalmond;
@@ -109,12 +113,29 @@ row>*{
     /* just to show box-shadow still works fine */
     box-shadow: 0 3px 9px black, inset 0 0 9px white;
     width:100% !important;
+    
+    
 }
+
+.bg-tarkov{
+  background-image: url("../img/gun.jpg");
+  width:100%;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  background-size: 500%;
+  background-attachment:fixed;
+  background-position: top;
+}
+
 .margin-top{
   margin-top:315px !important;
 }
 
 }
+
+
+
+
 .padding-10
 {
   padding-right:20px !important;
@@ -159,3 +180,17 @@ button{
   margin-left: 50px;
 }
 
+@media(max-width:768px){
+  
+  .bg-tarkov{
+    background-image: url("../img/gun.jpg");
+    width:100%;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    background-size: 500%;
+    background-attachment:fixed;
+    background-position: top;
+  }
+
+}
+  
