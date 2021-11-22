@@ -193,3 +193,33 @@ button{
 
 }
   
+.icons-likefb{
+font-size:80px !important;
+}
+.color{
+  color:rgb(53, 53, 53);
+}
+.colorhover{
+  color:white !important;
+}
+
+.padding-20{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.youtube:hover{
+  background-color: #c4302b;
+  
+}
+.facebook:hover{
+  background-color: #4668b3;
+
+}
+.twitch:hover{
+  background-color: purple;
+
+}
+.twitter:hover{
+  background-color:#db4a39;
+
+	}

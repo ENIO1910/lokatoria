@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	    <title>RUDIXONEK.pl</title>
+	    <title>Rudixonek.pl</title>
         <meta name="description" content="Lokatorzy">
         <meta name="keywords" content="Lokatorzy, mieszkania">
         <meta name="author" content="Patryk Staniewski">
@@ -76,17 +76,27 @@
                 <div class="d-flex flex-column my-5 my-lg-auto mx-xl-auto margin-top">
                     <ul class="text-center text-uppercase">
                     <li Class="list-unstyled text-center text-white h1">Tytuły jakie aktualnie ogrywam to:</li>                   
-                    <li class="list-unstyled fs-5 mx-2"><a href="#" class="h3 text-decoration-none text-list text-white-list underline">Valorant</a></li>
-                    <li class="list-unstyled fs-5 mx-2"><a href="#" class="h3 text-decoration-none text-grey underline">Escape from Tarkov</a></li>
-                    <li class="list-unstyled fs-5 mx-2"><a href="#" class="h3 text-decoration-none text-list text-white-list underline">Company of Heroes II</a></li>
-                    <li class="list-unstyled fs-5 mt-2 my-5"><a href="#" class="h3 text-decoration-none text-grey underline">SQUAD</a></li>
+                    <li class="list-unstyled fs-5 mt-3"><a href="#" class="h3 text-decoration-none text-list text-white-list underline">Valorant</a></li>
+                    <li class="list-unstyled fs-5 mt-3"><a href="#" class="h3 text-decoration-none text-grey underline">Escape from Tarkov</a></li>
+                    <li class="list-unstyled fs-5 mt-3"><a href="#" class="h3 text-decoration-none text-list text-white-list underline">Company of Heroes II</a></li>
+                    <li class="list-unstyled fs-5 mt-3"><a href="#" class="h3 text-decoration-none text-grey underline">SQUAD</a></li>
                     </ul>
                 </div>
             </div>
             <div class="bg-tarkov"></div>
-            <div>
-
-
+            <div class="d-flex flex-column flex-md-row bg-orange justify-content-center">
+                <div class="youtube padding-20 d-flex flex-column align-items-center" id="elem-yt">
+                    <a href="https:/youtube.com" ><i class="icon-youtube-play icons-likefb color" id="yt"></i></a>
+                </div>
+                <div class="twitch padding-20 d-flex flex-column align-items-center" id="elem-twitch">
+                <a href="https:/twitch.tv" ><i class="icon-twitch icons-likefb color" id="twitch"></i></a>
+                </div>
+                <div class="twitter padding-20 d-flex flex-column align-items-center" id="elem-twitter">
+                <a href="https:/twitter.com" ><i class="icon-twitter-squared icons-likefb color" id="twitter"></i></a>
+                </div>
+                <div class="facebook padding-20 d-flex flex-column align-items-center"id="elem-fb">
+                    <a href="https:/facebook.com" ><i class="icon-facebook-squared icons-likefb color"id="fb" ></i></a>
+                </div>
             </div>
 
 
@@ -120,7 +130,23 @@
                     mySidenav.removeClass('dwapieczero')
                 })
             });
-                
+
+            $('#elem-yt').hover(
+            function(){ $('#yt').toggleClass('colorhover') },
+            
+            )
+            $('#elem-twitch').hover(
+            function(){ $('#twitch').toggleClass('colorhover') },
+            
+            ) 
+            $('#elem-twitter').hover(
+            function(){ $('#twitter').toggleClass('colorhover') },
+            
+            )
+            $('#elem-fb').hover(
+            function(){ $('#fb').toggleClass('colorhover') },
+            
+            )
             });
            
             

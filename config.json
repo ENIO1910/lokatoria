@@ -7,9 +7,9 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "671f29fa10dda08074a4c6a341bb4f39",
-      "css": "bell-alt",
-      "code": 61683,
+      "uid": "3a00327e61b997b58518bd43ed83c3df",
+      "css": "login",
+      "code": 59393,
       "src": "fontawesome"
     },
     {
@@ -25,9 +25,33 @@
       "src": "fontawesome"
     },
     {
-      "uid": "3a00327e61b997b58518bd43ed83c3df",
-      "css": "login",
-      "code": 59393,
+      "uid": "671f29fa10dda08074a4c6a341bb4f39",
+      "css": "bell-alt",
+      "code": 61683,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4743b088aa95d6f3b6b990e770d3b647",
+      "css": "facebook-squared",
+      "code": 62216,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "47a1f80457068fbeab69fdb83d7d0817",
+      "css": "youtube-play",
+      "code": 61802,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e70df9acbabaebfbbf9c1dbc3e52ab13",
+      "css": "twitch",
+      "code": 61928,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "906348dc798a0d42715cc97c875e3ac6",
+      "css": "twitter-squared",
+      "code": 62212,
       "src": "fontawesome"
     }
   ]
