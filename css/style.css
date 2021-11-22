@@ -31,7 +31,7 @@ body{
 .bg-nav
 {
   background: rgb(2,0,36);
-  background: linear-gradient(45deg, rgb(24, 24, 155) 0%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(90deg, rgb(24, 24, 155) 0%, rgba(0,212,255,1) 100%);
   min-height: 80px;
 }
 .bg-nav-left
